@@ -1,34 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
-    {
-      "type": "java",
-      "name": "Main",
-      "request": "launch",
-      "mainClass": "Main",
-      "projectName": "CodingTest_ddff2481"
-    },
-    {
-      "type": "java",
-      "name": "삼성SW테스트기출",
-      "request": "launch",
-      "mainClass": "삼성SW테스트기출",
-      "projectName": "CodingTest_ddff2481"
-    },
-    {
-      "type": "java",
-      "name": "삼성SW테스트기출",
-      "request": "launch",
-      "mainClass": "삼성SW테스트기출.삼성SW테스트기출",
-      "projectName": "CodingTest_ddff2481"
-    },
-    {
-      "type": "java",
-      "name": "Main",
-      "request": "launch",
-      "mainClass": "삼성SW테스트기출.Main",
-      "projectName": "CodingTest_ddff2481"
-    },
+
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",

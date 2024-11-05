@@ -4,7 +4,7 @@ private
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,python,visualstudiocode,visualstudio
 # Created by https://www.toptal.com/developers/gitignore/api/java
 # Edit at https://www.toptal.com/developers/gitignore?templates=java
-
+temp.*
 ### Java ###
 # Compiled class file
 *.class
