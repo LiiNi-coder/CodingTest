@@ -73,7 +73,7 @@ public class Main {
 		}
 		Queue<Coord> q_water = new ArrayDeque<>();
 		Queue<Coord> next_q_water = new ArrayDeque<>();
-		
+		Queue<Coord> tempqw = null;
 		for (Coord w : waters) {
 			q_water.add(w);			
 		}
@@ -82,6 +82,7 @@ public class Main {
 		
 		Queue<QElement> q_dochi = new ArrayDeque<>();
 		Queue<QElement> next_q_dochi = new ArrayDeque<>();
+		Queue<QElement> tempqd = null;
 		q_dochi.add(new QElement(start, 0));
 
 		do {
@@ -116,8 +117,16 @@ public class Main {
 					visited_dochi[next_dochi.r][next_dochi.c] = true;
 				}
 			}
-			swapQ(q_water, next_q_water);
-			swapQ(q_dochi, next_q_dochi);
+//			swapQ(q_water, next_q_water);
+//			swapQ(q_dochi, next_q_dochi);
+			tempqw = q_water;
+			q_water = next_q_water;
+			next_q_water = tempqw;
+			
+			tempqd = q_dochi;
+			q_dochi = next_q_dochi;
+			next_q_dochi = tempqd;
+			
 		}while(!q_dochi.isEmpty());
 		System.out.println((answer == -1)? "KAKTUS" : answer);
 		br.close();
