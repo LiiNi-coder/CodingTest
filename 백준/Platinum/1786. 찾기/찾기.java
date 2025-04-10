@@ -53,11 +53,13 @@ public class Main {
 		}
 		
 		System.out.println(cnt);
+		StringBuilder sb = new StringBuilder();
 		if(cnt>0) {
 			for (int s : list) {
-				System.out.print(s+1 + " ");				
+				sb.append(s+1).append(" ");				
 			}
 		}
+		System.out.println(sb.toString());
 		br.close();
 	}
 
